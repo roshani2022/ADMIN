@@ -6,8 +6,7 @@ const Button = (props) => {
   return (
     <button
       style={{
-        color: props.isValid ? "red" : "black",
-        backgroundColor: props.isValid ? "white" : "lightcoral",
+        backgroundColor: props.isValid ? "red" : "lightcoral",
       }}
       type={props.type}
       className="button"
