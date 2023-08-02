@@ -4,14 +4,7 @@ import "./Button.css";
 
 const Button = (props) => {
   return (
-    <button
-      style={{
-        backgroundColor: props.isValid ? "red" : "lightcoral",
-      }}
-      type={props.type}
-      className="button"
-      onClick={props.onClick}
-    >
+    <button type={props.type} className={`form-control ${!props.isValid ? 'invalid' : 'valid'}`} onClick={props.onClick}>
       {props.children}
     </button>
   );
