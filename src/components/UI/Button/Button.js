@@ -4,7 +4,11 @@ import "./Button.css";
 
 const Button = (props) => {
   return (
-    <button type={props.type} className={`form-control ${!props.isValid ? 'invalid' : 'valid'}`} onClick={props.onClick}>
+    <button
+      type={props.type}
+      className={`form-control ${!props.isValid ? "invalid" : "valid"}`}
+      onClick={props.onClick}
+    >
       {props.children}
     </button>
   );
